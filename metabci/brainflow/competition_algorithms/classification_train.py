@@ -64,14 +64,67 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
 
 
+ALGO_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = ALGO_DIR.parents[2]
+
+
+def _validation_root() -> Path:
+    """Return the root folder that contains baseline validation data.
+
+    The validation data is submitted separately from the open-source code.  For
+    local review, place the unpacked data under ``validation_data/`` at the
+    project root, or set ``METABCI_VALIDATION_DATA_ROOT`` to the unpacked folder.
+    The historical local ``竞赛/`` folder is kept as a fallback for developers.
+    """
+    env_path = os.environ.get("METABCI_VALIDATION_DATA_ROOT", "").strip()
+    if env_path:
+        return Path(env_path).expanduser()
+    for candidate in (PROJECT_ROOT / "validation_data", PROJECT_ROOT / "竞赛"):
+        if candidate.exists():
+            return candidate
+    return PROJECT_ROOT / "validation_data"
+
+
+def _first_existing_dir(candidates: list[Path]) -> Path:
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return candidates[0]
+
+
+def _default_part2_data_root() -> str:
+    env_path = os.environ.get("METABCI_PART2_CLASSIFICATION_DATA_ROOT", "").strip()
+    if env_path:
+        return str(Path(env_path).expanduser())
+    root = _validation_root()
+    return str(
+        _first_existing_dir(
+            [
+                root / "分类" / "009",
+                root / "classification" / "009",
+                root / "009",
+            ]
+        )
+    )
+
+
+def _default_part2_output_dir(name: str, env_name: str = "METABCI_CLASSIFICATION_OUTPUT_DIR") -> str:
+    env_path = os.environ.get(env_name, "").strip()
+    if env_path:
+        return str(Path(env_path).expanduser())
+    return str(Path(_default_part2_data_root()).parent / name)
+
+
 # =========================================================
 # 0. Config
 # =========================================================
 
 @dataclass
 class Config:
-    data_root: str = r"E:\竞赛\分类\009"
-    output_dir: str = r"E:\竞赛\分类\output_009_tfr_raw_localglobal_diagnostic_ablation_5fold"
+    data_root: str = _default_part2_data_root()
+    output_dir: str = _default_part2_output_dir(
+        "output_009_tfr_raw_localglobal_diagnostic_ablation_5fold"
+    )
 
     sfreq: float = 500.0
     window_sec: float = 5.0
@@ -1337,7 +1390,10 @@ def main():
 
 def configure_first_ablation_final_model(cfg: Config) -> Config:
     """Use the first ablation setting: eeg_emg_pool50ms_offset0."""
-    cfg.output_dir = "output_009_tfr_raw_localglobal_first_ablation_final_model"
+    cfg.output_dir = _default_part2_output_dir(
+        "output_009_tfr_raw_localglobal_first_ablation_final_model",
+        env_name="METABCI_CLASSIFICATION_FINAL_MODEL_OUTPUT_DIR",
+    )
     cfg.use_eeg_modality = True
     cfg.use_emg_modality = True
     cfg.use_ecg_modality = False

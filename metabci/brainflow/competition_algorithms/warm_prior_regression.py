@@ -12,6 +12,7 @@ This script calls warm_prior_score_model.py to build the model, then:
 
 import csv
 import json
+import os
 import random
 from dataclasses import dataclass
 from pathlib import Path
@@ -22,14 +23,77 @@ from scipy.signal import butter, fftconvolve, sosfilt, sosfiltfilt
 import torch
 import torch.nn as nn
 
-from warm_prior_score_model import ModelConfig, build_model
+try:
+    from .warm_prior_score_model import ModelConfig, build_model
+except ImportError:
+    from warm_prior_score_model import ModelConfig, build_model
+
+
+ALGO_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = ALGO_DIR.parents[2]
+
+
+def _validation_root() -> Path:
+    env_path = os.environ.get("METABCI_VALIDATION_DATA_ROOT", "").strip()
+    if env_path:
+        return Path(env_path).expanduser()
+    for candidate in (PROJECT_ROOT / "validation_data", PROJECT_ROOT / "竞赛"):
+        if candidate.exists():
+            return candidate
+    return PROJECT_ROOT / "validation_data"
+
+
+def _first_existing_dir(candidates: list[Path]) -> Path:
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return candidates[0]
+
+
+def _default_warm_data_dir() -> str:
+    env_path = os.environ.get("METABCI_WARM_PRIOR_DATA_DIR", "").strip()
+    if env_path:
+        return str(Path(env_path).expanduser())
+    root = _validation_root()
+    return str(
+        _first_existing_dir(
+            [
+                root / "量化" / "009",
+                root / "quantification" / "009",
+                root / "009",
+            ]
+        )
+    )
+
+
+def _default_target_csv() -> str:
+    env_path = os.environ.get("METABCI_WARM_PRIOR_TARGET_CSV", "").strip()
+    if env_path:
+        return str(Path(env_path).expanduser())
+    data_dir = Path(_default_warm_data_dir())
+    candidates = [
+        data_dir.parent / "009_subject_score_target.csv",
+        _validation_root() / "量化" / "009_subject_score_target.csv",
+        _validation_root() / "quantification" / "009_subject_score_target.csv",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return str(candidate)
+    return str(candidates[0])
+
+
+def _default_output_dir() -> str:
+    env_path = os.environ.get("METABCI_WARM_PRIOR_OUTPUT_DIR", "").strip()
+    if env_path:
+        return str(Path(env_path).expanduser())
+    return str(Path(_default_warm_data_dir()).parent / "009_warm_prior_regression_results")
 
 
 @dataclass
 class ExperimentConfig:
-    data_dir: str = r"e:\竞赛\量化\009"
-    target_csv: str = r"e:\竞赛\量化\009_subject_score_target.csv"
-    output_dir: str = r"e:\竞赛\量化\009_warm_prior_regression_results"
+    data_dir: str = _default_warm_data_dir()
+    target_csv: str = _default_target_csv()
+    output_dir: str = _default_output_dir()
     subject_id: str = "009"
 
     sfreq: float = 500.0

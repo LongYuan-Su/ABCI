@@ -137,3 +137,87 @@ D:\Anaconda\envs\metabci_2026_new\python.exe applications\swallow_bci\demos\swal
 ```powershell
 D:\Anaconda\envs\metabci_2026_new\python.exe applications\swallow_bci\demos\swallow_demos\demo_02_play_paradigm1.py
 ```
+
+## 项目指标验证数据与验证程序代码
+
+组委会要求的“项目指标验证数据”和“验证程序代码”在本项目中分开管理：
+
+- 验证程序代码已经放在开源仓库中：`metabci/brainflow/competition_algorithms/`
+- 训练好的吞咽想象分类模型放在：`applications/swallow_bci/models/swallow_classifier/final_model.pt`
+- 基线验证数据随开源仓库一并提供，位于：`validation_data/`
+
+`validation_data/` 是组委会复现项目基线指标时使用的数据目录，目录结构如下：
+
+```text
+validation_data/
+├── classification/
+│   └── 009/
+│       └── cupture_data_part2/
+│           ├── 009_20260620_182128_data.npy
+│           ├── 009_20260620_182128_labels.json
+│           ├── 009_20260620_182128_meta.json
+│           └── swallow_part2_log_*.csv
+└── quantification/
+    ├── 009_subject_score_target.csv
+    └── 009/
+        ├── 009_20260620_180359_data.npy
+        ├── 009_20260620_180359_labels.json
+        ├── 009_20260620_180359_meta.json
+        └── swallow_paradigm_log_*.csv
+```
+
+如果评委希望把验证数据移动到其他目录，也可以通过环境变量指定数据根目录：
+
+```powershell
+$env:METABCI_VALIDATION_DATA_ROOT="D:\MetaBCI_swallow_baseline_validation_data"
+```
+
+组委会可按以下方式验证范式二吞咽想象二分类基线性能：
+
+```powershell
+D:\Anaconda\envs\metabci_2026_new\python.exe -m metabci.brainflow.competition_algorithms.classification_inference
+```
+
+该命令会读取 `validation_data/classification/009/` 下的范式二数据，并默认调用 `applications/swallow_bci/models/swallow_classifier/final_model.pt`。输出结果默认写入：
+
+```text
+validation_data/classification/output_009_tfr_raw_localglobal_first_ablation_inference/
+```
+
+重点查看：
+
+```text
+prediction_summary.json
+prediction_summary.csv
+predictions.csv
+```
+
+组委会可按以下方式验证范式一温水吞咽量化评估流程：
+
+```powershell
+D:\Anaconda\envs\metabci_2026_new\python.exe -m metabci.brainflow.competition_algorithms.warm_prior_regression
+```
+
+该命令会读取 `validation_data/quantification/009/` 下的范式一数据和 `009_subject_score_target.csv`。输出结果默认写入：
+
+```text
+validation_data/quantification/009_warm_prior_regression_results/
+```
+
+重点查看：
+
+```text
+fit_score.csv
+morlet_tfr_cache/
+```
+
+如需精确指定分类或量化数据目录，可使用以下环境变量：
+
+```powershell
+$env:METABCI_PART2_CLASSIFICATION_DATA_ROOT="D:\data\classification\009"
+$env:METABCI_WARM_PRIOR_DATA_DIR="D:\data\quantification\009"
+$env:METABCI_WARM_PRIOR_TARGET_CSV="D:\data\quantification\009_subject_score_target.csv"
+$env:METABCI_SWALLOW_CLASSIFIER_MODEL="D:\model\final_model.pt"
+```
+
+其中，`classification_inference.py`、`classification_train.py`、`warm_prior_regression.py` 已避免使用固定盘符路径；评委无需把数据放到开发者本机原始的 `E:\竞赛\...` 路径下。

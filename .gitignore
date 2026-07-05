@@ -158,3 +158,15 @@ cython_debug/
 .checkpoints
 /checkpoints
 .checkpoints/
+
+# Local scratch data copied from algorithm development.
+竞赛/
+
+# Keep baseline validation inputs in validation_data, but do not commit
+# regenerated inference/training caches and result folders.
+validation_data/**/classification_inference/
+validation_data/**/warm_prior_quantification/
+validation_data/**/output_*/
+validation_data/**/009_warm_prior_regression_results/
+validation_data/**/tfr_cache/
+validation_data/**/morlet_tfr_cache/

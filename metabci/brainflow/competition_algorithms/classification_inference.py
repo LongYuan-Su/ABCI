@@ -62,14 +62,81 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
 
 
+ALGO_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = ALGO_DIR.parents[2]
+
+
+def _validation_root() -> Path:
+    env_path = os.environ.get("METABCI_VALIDATION_DATA_ROOT", "").strip()
+    if env_path:
+        return Path(env_path).expanduser()
+    for candidate in (PROJECT_ROOT / "validation_data", PROJECT_ROOT / "竞赛"):
+        if candidate.exists():
+            return candidate
+    return PROJECT_ROOT / "validation_data"
+
+
+def _first_existing_dir(candidates: list[Path]) -> Path:
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return candidates[0]
+
+
+def _default_part2_data_root() -> str:
+    env_path = os.environ.get("METABCI_PART2_CLASSIFICATION_DATA_ROOT", "").strip()
+    if env_path:
+        return str(Path(env_path).expanduser())
+    root = _validation_root()
+    return str(
+        _first_existing_dir(
+            [
+                root / "分类" / "009",
+                root / "classification" / "009",
+                root / "009",
+            ]
+        )
+    )
+
+
+def _default_part2_output_dir(
+    name: str,
+    env_name: str = "METABCI_CLASSIFICATION_INFERENCE_OUTPUT_DIR",
+) -> str:
+    env_path = os.environ.get(env_name, "").strip()
+    if env_path:
+        return str(Path(env_path).expanduser())
+    return str(Path(_default_part2_data_root()).parent / name)
+
+
+def _default_classifier_model_path() -> str:
+    env_path = os.environ.get("METABCI_SWALLOW_CLASSIFIER_MODEL", "").strip()
+    if env_path:
+        return str(Path(env_path).expanduser())
+    candidates = [
+        PROJECT_ROOT / "applications" / "swallow_bci" / "models" / "swallow_classifier" / "final_model.pt",
+        Path(_default_part2_data_root()).parent
+        / "output_009_tfr_raw_localglobal_first_ablation_final_model"
+        / "final_model.pt",
+        ALGO_DIR / "output_009_tfr_raw_localglobal_first_ablation_final_model" / "final_model.pt",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return str(candidate)
+    return str(candidates[0])
+
+
 # =========================================================
 # 0. Config
 # =========================================================
 
 @dataclass
 class Config:
-    data_root: str = r"E:\竞赛\分类\009"
-    output_dir: str = r"E:\竞赛\分类\output_009_tfr_raw_localglobal_diagnostic_ablation_5fold"
+    data_root: str = _default_part2_data_root()
+    output_dir: str = _default_part2_output_dir(
+        "output_009_tfr_raw_localglobal_diagnostic_ablation_5fold",
+        env_name="METABCI_CLASSIFICATION_OUTPUT_DIR",
+    )
 
     sfreq: float = 500.0
     window_sec: float = 5.0
@@ -1333,9 +1400,11 @@ def main():
         print("有实验失败，详情见:", root / "ablation_failed.csv")
 
 
-MODEL_PATH = r"output_009_tfr_raw_localglobal_first_ablation_final_model\final_model.pt"
-PREDICT_DATA_ROOT = None
-INFERENCE_OUTPUT_DIR = r"output_009_tfr_raw_localglobal_first_ablation_inference"
+MODEL_PATH = _default_classifier_model_path()
+PREDICT_DATA_ROOT = _default_part2_data_root()
+INFERENCE_OUTPUT_DIR = _default_part2_output_dir(
+    "output_009_tfr_raw_localglobal_first_ablation_inference"
+)
 
 
 def safe_torch_load(path, map_location="cpu"):
