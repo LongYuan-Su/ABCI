@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_sec": 26.172783851623535,
+    "code": 5,
+    "name": "实验开始"
+  },
+  {
+    "timestamp_sec": 30.21547555923462,
+    "code": 1,
+    "name": "静息1"
+  },
+  {
+    "timestamp_sec": 35.23163628578186,
+    "code": 2,
+    "name": "想象吞咽1"
+  },
+  {
+    "timestamp_sec": 40.24329686164856,
+    "code": 1,
+    "name": "静息2"
+  },
+  {
+    "timestamp_sec": 45.29045224189758,
+    "code": 3,
+    "name": "含水1"
+  },
+  {
+    "timestamp_sec": 54.81462001800537,
+    "code": 4,
+    "name": "温水吞咽1"
+  },
+  {
+    "timestamp_sec": 69.86456108093262,
+    "code": 6,
+    "name": "实验结束"
+  },
+  {
+    "timestamp_sec": 76.17891883850098,
+    "code": 6,
+    "name": "实验结束"
+  }
+]

@@ -1,27 +1,40 @@
-# A development note of *Brainflow*
+# brainflow 目录说明
 
-## 1. Updating note
+本目录保留 MetaBCI 原有在线采集框架，并承载本项目的实时采集、记录、处理、调控和 GUI 入口。
 
-Now, *brainflow* is able to support more kinds of devices by:
+## 根目录保留的原 MetaBCI 核心
 
-* Native support Neuroscan and Neurcale by inheriting and re-written the BaseAmplifier class.
-* Indirect support devices, such as [EGI](https://www.egi.com), [g.tec](https://www.gtec.at/) and [BioSemi](https://www.biosemi.com), by implementing a communication protocol between MetaBCI and [Lab streaming layer](https://github.com/sccn/labstreaminglayer). Due to the LSL provides many specific apps for retrieving data from different devices in a unified format, the MetaBCI could get and process online data from these devices by using LSL.
-* For meeting the requirements of recording event triggers without hardware like Serial and LPT. We provide a feasible way to writing events triggers (also known as markers). Users can use it to write markers just like writing hardware triggers.
+- `amplifiers.py`：放大器抽象、环形缓存、Marker、LSL 接入等基础能力。
+- `workers.py`：在线处理 Worker。
+- `logger.py`：统一日志接口。
 
-## 2. How to use
+这几个文件与原版 `MetaBCI-master/metabci/brainflow` 对齐，尽量不做结构性移动。
 
-* You need to check [this website](https://labstreaminglayer.readthedocs.io/info/supported_devices.html) and download the LSL app for your device.
-* Write some code to instantiate the LSLapp class.
-* The remaining steps are similar with demo scripts [here]()
+## 新增/扩展子包
 
-## 3. Suggestion and limitation
+- `acquisition/`：数据源、采集记录和运行时数据库。
+  - `sources.py`：OpenBCI WiFi Shield、模拟数据源、实时缓冲区。
+  - `recorder.py`：EEG/EMG/ECG 数据、marker、患者元数据保存。
+  - `database.py`：患者、会话和事件 SQLite 数据库管理。
+  - `real_time_eeg.py`：独立实时波形显示工具。
+  - `view_data.py`：命令行数据查看工具。
 
-* If it is possible, **TRY TO USE HARDWARE EVENT TRIGGER**. As far as I know, the hardware event triggers enable more precise synchronization of events with the device data streams, in most of the situation. So if you had a trigger box or any other similar devices, try to use it without applying the software event trigger.
-* If you owned a physical device, and also able to acquire the communication protocol code or instructions for getting data from the devices. We strongly suggest that you can try to inherit and re-write the BaseAmplifier class for help MetaBCI to native more device.
-* Our lab (TUNERL) owned an EGI device, the metabci team planned to support EGI first.
-* Considering the differences among different devices for transfering the event trigger.
-    **YOU MUST BE VERY CAREFUL** to determine wethher the data stream reading
-    from the LSL apps contains a event channel. For example, the neuroscan
-    synamp II will append a extra event channel to the raw data channel.
-    Because we do not have chance to test each device that LSL supported, so
-    please modify this class before using with your own condition.
+- `processing/`：信号处理和评估算法。
+  - `assessment.py`：吞咽评估结果计算。
+  - `decoder.py`：解码器工厂。
+  - `feature_extraction.py`：在线特征提取。
+  - `signal_quality.py`：通道信号质量检测。
+
+- `control/`：调控闭环和电刺激接口。
+  - `closed_loop.py`：闭环调控脚本，可由主 GUI 子进程启动。
+  - `online_swallow_control.py`：实时吞咽想象检测器。
+  - `stimulator.py`：打印、串口、LSL 等刺激器抽象。
+
+- `gui/`：主界面和弹窗。
+  - `main_window.py`：系统主入口。
+  - `eeg_display.py`：EEG/EMG/ECG 多区域实时波形显示。
+  - `patient_dialogs.py`、`score_dialog.py`：患者和评分弹窗。
+
+- `competition_algorithms/`：比赛分类/量化代码的封装入口。
+
+运行时数据库已移出源码目录，默认位于项目根目录 `.runtime/swallow_experiment.db`。

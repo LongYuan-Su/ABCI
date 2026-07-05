@@ -1,0 +1,212 @@
+[
+  {
+    "timestamp_sec": 7.792568683624268,
+    "code": 5,
+    "name": "E1_实验开始"
+  },
+  {
+    "timestamp_sec": 13.426059484481812,
+    "code": 2,
+    "name": "E1_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 19.758907079696655,
+    "code": 3,
+    "name": "E1_含水1"
+  },
+  {
+    "timestamp_sec": 26.882648468017578,
+    "code": 4,
+    "name": "E1_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 43.228211402893066,
+    "code": 5,
+    "name": "E2_实验开始"
+  },
+  {
+    "timestamp_sec": 48.87797927856445,
+    "code": 2,
+    "name": "E2_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 55.22752332687378,
+    "code": 3,
+    "name": "E2_含水1"
+  },
+  {
+    "timestamp_sec": 61.54117012023926,
+    "code": 4,
+    "name": "E2_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 78.4013774394989,
+    "code": 5,
+    "name": "E3_实验开始"
+  },
+  {
+    "timestamp_sec": 84.04895806312561,
+    "code": 2,
+    "name": "E3_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 90.36428689956665,
+    "code": 3,
+    "name": "E3_含水1"
+  },
+  {
+    "timestamp_sec": 96.654048204422,
+    "code": 4,
+    "name": "E3_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 112.97178792953491,
+    "code": 5,
+    "name": "E4_实验开始"
+  },
+  {
+    "timestamp_sec": 118.61371564865112,
+    "code": 2,
+    "name": "E4_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 124.949462890625,
+    "code": 3,
+    "name": "E4_含水1"
+  },
+  {
+    "timestamp_sec": 130.55136036872864,
+    "code": 4,
+    "name": "E4_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 146.86633968353271,
+    "code": 5,
+    "name": "E5_实验开始"
+  },
+  {
+    "timestamp_sec": 152.47386121749878,
+    "code": 2,
+    "name": "E5_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 158.81847071647644,
+    "code": 3,
+    "name": "E5_含水1"
+  },
+  {
+    "timestamp_sec": 164.39698314666748,
+    "code": 4,
+    "name": "E5_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 180.7209665775299,
+    "code": 5,
+    "name": "E6_实验开始"
+  },
+  {
+    "timestamp_sec": 186.368066072464,
+    "code": 2,
+    "name": "E6_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 192.7070472240448,
+    "code": 3,
+    "name": "E6_含水1"
+  },
+  {
+    "timestamp_sec": 198.24865555763245,
+    "code": 4,
+    "name": "E6_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 214.56966590881348,
+    "code": 5,
+    "name": "E7_实验开始"
+  },
+  {
+    "timestamp_sec": 220.21374583244324,
+    "code": 2,
+    "name": "E7_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 226.5515637397766,
+    "code": 3,
+    "name": "E7_含水1"
+  },
+  {
+    "timestamp_sec": 232.64116144180298,
+    "code": 4,
+    "name": "E7_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 248.96931791305542,
+    "code": 5,
+    "name": "E8_实验开始"
+  },
+  {
+    "timestamp_sec": 254.5722165107727,
+    "code": 2,
+    "name": "E8_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 260.8990128040314,
+    "code": 3,
+    "name": "E8_含水1"
+  },
+  {
+    "timestamp_sec": 266.78562211990356,
+    "code": 4,
+    "name": "E8_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 283.1386761665344,
+    "code": 5,
+    "name": "E9_实验开始"
+  },
+  {
+    "timestamp_sec": 288.7515618801117,
+    "code": 2,
+    "name": "E9_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 295.0644054412842,
+    "code": 3,
+    "name": "E9_含水1"
+  },
+  {
+    "timestamp_sec": 301.84007024765015,
+    "code": 4,
+    "name": "E9_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 318.1897552013397,
+    "code": 5,
+    "name": "E10_实验开始"
+  },
+  {
+    "timestamp_sec": 323.8289043903351,
+    "code": 2,
+    "name": "E10_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 330.1481156349182,
+    "code": 3,
+    "name": "E10_含水1"
+  },
+  {
+    "timestamp_sec": 335.931218624115,
+    "code": 4,
+    "name": "E10_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 352.27018094062805,
+    "code": 6,
+    "name": "实验结束"
+  },
+  {
+    "timestamp_sec": 359.2827236652374,
+    "code": 6,
+    "name": "实验结束"
+  }
+]

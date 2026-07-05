@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp_sec": 5.814242124557495,
+    "code": 5,
+    "name": "实验开始"
+  },
+  {
+    "timestamp_sec": 5.817358732223511,
+    "code": 1,
+    "name": "E1_静息1"
+  },
+  {
+    "timestamp_sec": 10.823184967041016,
+    "code": 2,
+    "name": "E1_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 15.84699273109436,
+    "code": 1,
+    "name": "E2_静息1"
+  },
+  {
+    "timestamp_sec": 20.860275745391846,
+    "code": 2,
+    "name": "E2_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 25.878319025039673,
+    "code": 1,
+    "name": "E3_静息1"
+  },
+  {
+    "timestamp_sec": 30.893616914749146,
+    "code": 2,
+    "name": "E3_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 35.91203045845032,
+    "code": 1,
+    "name": "E4_静息1"
+  },
+  {
+    "timestamp_sec": 40.9287805557251,
+    "code": 2,
+    "name": "E4_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 45.94036507606506,
+    "code": 1,
+    "name": "E5_静息1"
+  },
+  {
+    "timestamp_sec": 50.95924997329712,
+    "code": 2,
+    "name": "E5_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 55.970762491226196,
+    "code": 1,
+    "name": "E6_静息1"
+  },
+  {
+    "timestamp_sec": 60.98583364486694,
+    "code": 2,
+    "name": "E6_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 65.99986004829407,
+    "code": 1,
+    "name": "E7_静息1"
+  },
+  {
+    "timestamp_sec": 71.01755118370056,
+    "code": 2,
+    "name": "E7_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 76.04017424583435,
+    "code": 1,
+    "name": "E8_静息1"
+  },
+  {
+    "timestamp_sec": 81.05257773399353,
+    "code": 2,
+    "name": "E8_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 86.07077383995056,
+    "code": 1,
+    "name": "E9_静息1"
+  },
+  {
+    "timestamp_sec": 91.09020614624023,
+    "code": 2,
+    "name": "E9_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 96.11135840415955,
+    "code": 1,
+    "name": "E10_静息1"
+  },
+  {
+    "timestamp_sec": 101.13000321388245,
+    "code": 2,
+    "name": "E10_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 106.14678001403809,
+    "code": 6,
+    "name": "实验结束"
+  }
+]

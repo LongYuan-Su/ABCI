@@ -1,0 +1,137 @@
+[
+  {
+    "timestamp_sec": 27.57925510406494,
+    "code": 5,
+    "name": "实验开始"
+  },
+  {
+    "timestamp_sec": 36.18407320976257,
+    "code": 2,
+    "name": "想象吞咽"
+  },
+  {
+    "timestamp_sec": 46.02422118186951,
+    "code": 3,
+    "name": "含水"
+  },
+  {
+    "timestamp_sec": 58.7782416343689,
+    "code": 4,
+    "name": "温水吞咽"
+  },
+  {
+    "timestamp_sec": 71.71228170394897,
+    "code": 6,
+    "name": "实验结束"
+  },
+  {
+    "timestamp_sec": 75.37251400947571,
+    "code": 5,
+    "name": "实验开始"
+  },
+  {
+    "timestamp_sec": 84.59208703041077,
+    "code": 2,
+    "name": "想象吞咽"
+  },
+  {
+    "timestamp_sec": 94.45290398597717,
+    "code": 3,
+    "name": "含水"
+  },
+  {
+    "timestamp_sec": 111.19652128219604,
+    "code": 4,
+    "name": "温水吞咽"
+  },
+  {
+    "timestamp_sec": 126.12529683113098,
+    "code": 6,
+    "name": "实验结束"
+  },
+  {
+    "timestamp_sec": 129.8820080757141,
+    "code": 5,
+    "name": "实验开始"
+  },
+  {
+    "timestamp_sec": 139.03206729888916,
+    "code": 2,
+    "name": "想象吞咽"
+  },
+  {
+    "timestamp_sec": 148.994131565094,
+    "code": 3,
+    "name": "含水"
+  },
+  {
+    "timestamp_sec": 158.8336842060089,
+    "code": 4,
+    "name": "温水吞咽"
+  },
+  {
+    "timestamp_sec": 173.33295321464539,
+    "code": 6,
+    "name": "实验结束"
+  },
+  {
+    "timestamp_sec": 177.02708292007446,
+    "code": 5,
+    "name": "实验开始"
+  },
+  {
+    "timestamp_sec": 186.070782661438,
+    "code": 2,
+    "name": "想象吞咽"
+  },
+  {
+    "timestamp_sec": 196.32399034500122,
+    "code": 3,
+    "name": "含水"
+  },
+  {
+    "timestamp_sec": 205.96894073486328,
+    "code": 4,
+    "name": "温水吞咽"
+  },
+  {
+    "timestamp_sec": 219.8800232410431,
+    "code": 6,
+    "name": "实验结束"
+  },
+  {
+    "timestamp_sec": 223.5435447692871,
+    "code": 5,
+    "name": "实验开始"
+  },
+  {
+    "timestamp_sec": 232.87189507484436,
+    "code": 2,
+    "name": "想象吞咽"
+  },
+  {
+    "timestamp_sec": 242.71523261070251,
+    "code": 3,
+    "name": "含水"
+  },
+  {
+    "timestamp_sec": 251.71507620811462,
+    "code": 4,
+    "name": "温水吞咽"
+  },
+  {
+    "timestamp_sec": 266.6329228878021,
+    "code": 6,
+    "name": "实验结束"
+  },
+  {
+    "timestamp_sec": 271.06343173980713,
+    "code": 5,
+    "name": "实验开始"
+  },
+  {
+    "timestamp_sec": 283.2857315540314,
+    "code": 6,
+    "name": "实验结束"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "patient_id": "012",
+  "data_root": "C:\\Users\\cwj666\\Desktop\\MetaBCI_Integrated_Initial_Version\\logs\\012",
+  "output_dir": "C:\\Users\\cwj666\\Desktop\\MetaBCI_Integrated_Initial_Version\\logs\\012\\warm_prior_quantification",
+  "created_at": "2026-07-04T17:20:33",
+  "target_score_1point": 1.0,
+  "fitted_score_1point": 0.9753140807151794,
+  "fit_loss": 0.0006093946285545826,
+  "fit_score_csv": "C:\\Users\\cwj666\\Desktop\\MetaBCI_Integrated_Initial_Version\\logs\\012\\warm_prior_quantification\\fit_score.csv"
+}

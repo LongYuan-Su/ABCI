@@ -15,8 +15,12 @@ import numpy as np
 import pylsl
 import queue
 
-from .logger import get_logger
-from .workers import ProcessWorker
+try:
+    from .logger import get_logger
+    from .workers import ProcessWorker
+except ImportError:
+    from logger import get_logger  # type: ignore[no-redef]
+    from workers import ProcessWorker  # type: ignore[no-redef]
 
 logger_amp = get_logger("amplifier")
 logger_marker = get_logger("marker")

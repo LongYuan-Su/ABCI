@@ -1,0 +1,2 @@
+﻿epoch,event_index,event_name,timestamp_sec,system_time,intent_detected,confidence,detector_mode,controller_action
+1,1,想象吞咽,1782225730.067511,2026-06-23 22:42:10.067,1,1.000000,cue,placeholder_triggered

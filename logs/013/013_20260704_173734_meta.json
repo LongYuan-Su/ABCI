@@ -1,0 +1,49 @@
+{
+  "subject_id": "013",
+  "srate": 500.0,
+  "n_channels": 16,
+  "channel_labels": [
+    "FP1",
+    "FP2",
+    "C3",
+    "C4",
+    "P7",
+    "P8",
+    "EMG1",
+    "EMG2",
+    "EMG3",
+    "EMG4",
+    "F3",
+    "F4",
+    "ECG",
+    "Cz",
+    "EMG5",
+    "EMG6"
+  ],
+  "eeg_channels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    13
+  ],
+  "emg_channels": [
+    6,
+    7,
+    8,
+    9,
+    14,
+    15
+  ],
+  "shape": [
+    16,
+    30164
+  ],
+  "duration_sec": 60.328,
+  "session_start": 1783157790.6028874,
+  "buffer_size": 900000
+}

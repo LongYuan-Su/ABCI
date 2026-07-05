@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp_sec": 7.106402397155762,
+    "code": 5,
+    "name": "E1_实验开始"
+  },
+  {
+    "timestamp_sec": 12.750490188598633,
+    "code": 1,
+    "name": "E1_静息1"
+  },
+  {
+    "timestamp_sec": 19.25176429748535,
+    "code": 2,
+    "name": "E1_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 25.58610725402832,
+    "code": 1,
+    "name": "E1_静息2"
+  },
+  {
+    "timestamp_sec": 32.13717818260193,
+    "code": 3,
+    "name": "E1_含水1"
+  },
+  {
+    "timestamp_sec": 39.69144129753113,
+    "code": 4,
+    "name": "E1_温水吞咽1"
+  },
+  {
+    "timestamp_sec": 56.015190839767456,
+    "code": 6,
+    "name": "E1_实验结束"
+  },
+  {
+    "timestamp_sec": 61.35213875770569,
+    "code": 5,
+    "name": "E2_实验开始"
+  },
+  {
+    "timestamp_sec": 67.009268283844,
+    "code": 1,
+    "name": "E2_静息1"
+  },
+  {
+    "timestamp_sec": 73.50613689422607,
+    "code": 2,
+    "name": "E2_想象吞咽1"
+  },
+  {
+    "timestamp_sec": 79.8303701877594,
+    "code": 1,
+    "name": "E2_静息2"
+  },
+  {
+    "timestamp_sec": 86.54353618621826,
+    "code": 6,
+    "name": "实验结束"
+  }
+]

@@ -1,0 +1,59 @@
+#include <Arduino.h>
+
+#include "pins.h"
+
+namespace {
+
+constexpr bool BUZZER_ACTIVE_LOW = false;
+constexpr unsigned long CYCLE_MS = 7000;// 整个循环周期
+constexpr unsigned long BEEP_MS = 150;// 每次响多久
+constexpr unsigned long FIRST_BEEP_START_MS = 500;// 每次响的时间点
+constexpr unsigned long TRIPLE_BEEP_1_START_MS = 4000;// 每次响的时间点
+constexpr unsigned long TRIPLE_BEEP_2_START_MS = 4330;// 每次响的时间点
+constexpr unsigned long TRIPLE_BEEP_3_START_MS = 4660;// 每次响的时间点
+
+bool beepInWindow(unsigned long cycleMs, unsigned long startMs) {
+  return cycleMs >= startMs && cycleMs < startMs + BEEP_MS;
+}
+
+bool shouldBuzzerBeOn(unsigned long cycleMs) {
+  return beepInWindow(cycleMs, FIRST_BEEP_START_MS) ||
+         beepInWindow(cycleMs, TRIPLE_BEEP_1_START_MS) ||
+         beepInWindow(cycleMs, TRIPLE_BEEP_2_START_MS) ||
+         beepInWindow(cycleMs, TRIPLE_BEEP_3_START_MS);
+}
+
+uint8_t buzzerLevel(bool enabled) {
+  if (BUZZER_ACTIVE_LOW) {
+    return enabled ? LOW : HIGH;
+  }
+
+  return enabled ? HIGH : LOW;
+}
+
+void setBuzzer(bool enabled) {
+  static bool lastEnabled = false;
+
+  if (enabled == lastEnabled) {
+    return;
+  }
+
+  digitalWrite(Pins::BUZZER, buzzerLevel(enabled));
+  digitalWrite(Pins::LED, enabled ? HIGH : LOW);
+
+  lastEnabled = enabled;
+}
+
+}  // namespace
+
+void setup() {
+  pinMode(Pins::BUZZER, OUTPUT);
+  pinMode(Pins::LED, OUTPUT);
+  digitalWrite(Pins::BUZZER, buzzerLevel(false));
+  digitalWrite(Pins::LED, LOW);
+}
+
+void loop() {
+  const unsigned long cycleMs = millis() % CYCLE_MS;
+  setBuzzer(shouldBuzzerBeOn(cycleMs));
+}

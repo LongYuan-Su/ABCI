@@ -1,0 +1,1104 @@
+{
+  "count": 68,
+  "missing": [
+    "data.npy",
+    "labels.json",
+    "meta.json"
+  ],
+  "templates": [
+    "logs/<患者ID",
+    "logs\\<患者ID",
+    "logs\\<患者ID>\\cupture_data_part2",
+    "logs\\<患者ID>\\cupture_data_part2下生成同类文件",
+    "logs\\<患者ID>\\labels.json",
+    "logs\\<患者ID>\\下生成data.npy",
+    "logs\\<患者ID>下的data.npy"
+  ],
+  "items": [
+    [
+      "data.npy",
+      {
+        "kind": "bare",
+        "exists": false,
+        "line_samples": [
+          11
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\data.npy",
+        "mentions": 1,
+        "lines": [
+          11
+        ]
+      }
+    ],
+    [
+      "labels.json",
+      {
+        "kind": "bare",
+        "exists": false,
+        "line_samples": [
+          76
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\labels.json",
+        "mentions": 1,
+        "lines": [
+          76
+        ]
+      }
+    ],
+    [
+      "meta.json",
+      {
+        "kind": "bare",
+        "exists": false,
+        "line_samples": [
+          76
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\meta.json",
+        "mentions": 1,
+        "lines": [
+          76
+        ]
+      }
+    ],
+    [
+      "logs/<患者ID",
+      {
+        "kind": "template",
+        "exists": null,
+        "line_samples": [
+          365
+        ],
+        "resolved": "",
+        "mentions": 1,
+        "lines": [
+          365
+        ]
+      }
+    ],
+    [
+      "logs\\<患者ID",
+      {
+        "kind": "template",
+        "exists": null,
+        "line_samples": [
+          367
+        ],
+        "resolved": "",
+        "mentions": 1,
+        "lines": [
+          367
+        ]
+      }
+    ],
+    [
+      "logs\\<患者ID>\\cupture_data_part2",
+      {
+        "kind": "template",
+        "exists": null,
+        "line_samples": [
+          372
+        ],
+        "resolved": "",
+        "mentions": 1,
+        "lines": [
+          372
+        ]
+      }
+    ],
+    [
+      "logs\\<患者ID>\\cupture_data_part2下生成同类文件",
+      {
+        "kind": "template",
+        "exists": null,
+        "line_samples": [
+          137
+        ],
+        "resolved": "",
+        "mentions": 1,
+        "lines": [
+          137
+        ]
+      }
+    ],
+    [
+      "logs\\<患者ID>\\labels.json",
+      {
+        "kind": "template",
+        "exists": null,
+        "line_samples": [
+          388
+        ],
+        "resolved": "",
+        "mentions": 1,
+        "lines": [
+          388
+        ]
+      }
+    ],
+    [
+      "logs\\<患者ID>\\下生成data.npy",
+      {
+        "kind": "template",
+        "exists": null,
+        "line_samples": [
+          137
+        ],
+        "resolved": "",
+        "mentions": 1,
+        "lines": [
+          137
+        ]
+      }
+    ],
+    [
+      "logs\\<患者ID>下的data.npy",
+      {
+        "kind": "template",
+        "exists": null,
+        "line_samples": [
+          76
+        ],
+        "resolved": "",
+        "mentions": 1,
+        "lines": [
+          76
+        ]
+      }
+    ],
+    [
+      "__init__.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          52
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\__init__.py",
+        "mentions": 1,
+        "lines": [
+          52
+        ]
+      }
+    ],
+    [
+      "amplifiers.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          41
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\amplifiers.py",
+        "mentions": 1,
+        "lines": [
+          41
+        ]
+      }
+    ],
+    [
+      "applications/swallow_bci/demos/swallow_demos",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          59
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos",
+        "mentions": 1,
+        "lines": [
+          59
+        ]
+      }
+    ],
+    [
+      "applications/swallow_bci/hardware/esp32b_controller",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          60
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\hardware\\esp32b_controller",
+        "mentions": 1,
+        "lines": [
+          60
+        ]
+      }
+    ],
+    [
+      "applications/swallow_bci/models/swallow_classifier",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          61
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\models\\swallow_classifier",
+        "mentions": 1,
+        "lines": [
+          61
+        ]
+      }
+    ],
+    [
+      "applications/swallow_bci/tools/esp32b_control_gui.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          62
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\tools\\esp32b_control_gui.py",
+        "mentions": 1,
+        "lines": [
+          62
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          30
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci",
+        "mentions": 1,
+        "lines": [
+          30
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci\\demos\\swallow_demos",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          357,
+          438
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos",
+        "mentions": 2,
+        "lines": [
+          357,
+          438
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci\\demos\\swallow_demos\\demo_01_main_gui_demo.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          82,
+          100
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\demo_01_main_gui_demo.py",
+        "mentions": 2,
+        "lines": [
+          82,
+          100
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci\\demos\\swallow_demos\\demo_02_play_paradigm1.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          82,
+          105
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\demo_02_play_paradigm1.py",
+        "mentions": 2,
+        "lines": [
+          82,
+          105
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci\\demos\\swallow_demos\\demo_03_play_paradigm2.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          82,
+          118
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\demo_03_play_paradigm2.py",
+        "mentions": 2,
+        "lines": [
+          82,
+          118
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci\\demos\\swallow_demos\\demo_04_control_evaluation.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          82,
+          125
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\demo_04_control_evaluation.py",
+        "mentions": 2,
+        "lines": [
+          82,
+          125
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci\\demos\\swallow_demos\\run_all_demos.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          13,
+          75,
+          93
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\run_all_demos.py",
+        "mentions": 3,
+        "lines": [
+          13,
+          75,
+          93
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci\\hardware\\esp32b_controller\\src",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          352
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\hardware\\esp32b_controller\\src",
+        "mentions": 1,
+        "lines": [
+          352
+        ]
+      }
+    ],
+    [
+      "applications\\swallow_bci\\tools\\esp32b_control_gui.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          34,
+          347,
+          443
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\tools\\esp32b_control_gui.py",
+        "mentions": 3,
+        "lines": [
+          34,
+          347,
+          443
+        ]
+      }
+    ],
+    [
+      "classification_inference.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          327
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\competition_algorithms\\classification_inference.py",
+        "mentions": 1,
+        "lines": [
+          327
+        ]
+      }
+    ],
+    [
+      "decoder.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          242
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\processing\\decoder.py",
+        "mentions": 1,
+        "lines": [
+          242
+        ]
+      }
+    ],
+    [
+      "demo_01_main_gui_demo.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          75
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\demo_01_main_gui_demo.py",
+        "mentions": 1,
+        "lines": [
+          75
+        ]
+      }
+    ],
+    [
+      "demo_02_play_paradigm1.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          75
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\demo_02_play_paradigm1.py",
+        "mentions": 1,
+        "lines": [
+          75
+        ]
+      }
+    ],
+    [
+      "demo_03_play_paradigm2.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          75
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\demo_03_play_paradigm2.py",
+        "mentions": 1,
+        "lines": [
+          75
+        ]
+      }
+    ],
+    [
+      "demo_04_control_evaluation.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          75
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\demos\\swallow_demos\\demo_04_control_evaluation.py",
+        "mentions": 1,
+        "lines": [
+          75
+        ]
+      }
+    ],
+    [
+      "docs/source",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          64
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\docs\\source",
+        "mentions": 1,
+        "lines": [
+          64
+        ]
+      }
+    ],
+    [
+      "eeg_display.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          50
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\gui\\eeg_display.py",
+        "mentions": 1,
+        "lines": [
+          50
+        ]
+      }
+    ],
+    [
+      "environment.yml",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          69
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\environment.yml",
+        "mentions": 1,
+        "lines": [
+          69
+        ]
+      }
+    ],
+    [
+      "final_model.pt",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          8
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\applications\\swallow_bci\\models\\swallow_classifier\\final_model.pt",
+        "mentions": 1,
+        "lines": [
+          8
+        ]
+      }
+    ],
+    [
+      "gui\\eeg_display.py",
+      {
+        "kind": "suffix",
+        "exists": true,
+        "line_samples": [
+          403
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\gui\\eeg_display.py",
+        "mentions": 1,
+        "lines": [
+          403
+        ]
+      }
+    ],
+    [
+      "logger.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          42
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\logger.py",
+        "mentions": 1,
+        "lines": [
+          42
+        ]
+      }
+    ],
+    [
+      "metabci\\brainda",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          30
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainda",
+        "mentions": 1,
+        "lines": [
+          30
+        ]
+      }
+    ],
+    [
+      "metabci\\brainda\\algorithms\\deep_learning\\swallow_net.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          267
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainda\\algorithms\\deep_learning\\swallow_net.py",
+        "mentions": 1,
+        "lines": [
+          267
+        ]
+      }
+    ],
+    [
+      "metabci\\brainda\\algorithms\\deep_learning\\swallow_trainer.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          272
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainda\\algorithms\\deep_learning\\swallow_trainer.py",
+        "mentions": 1,
+        "lines": [
+          272
+        ]
+      }
+    ],
+    [
+      "metabci\\brainda\\datasets\\simulated_swallow.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          257,
+          377
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainda\\datasets\\simulated_swallow.py",
+        "mentions": 2,
+        "lines": [
+          257,
+          377
+        ]
+      }
+    ],
+    [
+      "metabci\\brainda\\datasets\\swallow.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          383
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainda\\datasets\\swallow.py",
+        "mentions": 1,
+        "lines": [
+          383
+        ]
+      }
+    ],
+    [
+      "metabci\\brainda\\paradigms\\swallow.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          262
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainda\\paradigms\\swallow.py",
+        "mentions": 1,
+        "lines": [
+          262
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          30
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow",
+        "mentions": 1,
+        "lines": [
+          30
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\acquisition\\recorder.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          232,
+          317
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\acquisition\\recorder.py",
+        "mentions": 2,
+        "lines": [
+          232,
+          317
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\acquisition\\sources.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          212,
+          307,
+          403
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\acquisition\\sources.py",
+        "mentions": 3,
+        "lines": [
+          212,
+          307,
+          403
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\competition_algorithms\\classification_train.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          327
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\competition_algorithms\\classification_train.py",
+        "mentions": 1,
+        "lines": [
+          327
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\competition_algorithms\\integration.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          332
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\competition_algorithms\\integration.py",
+        "mentions": 1,
+        "lines": [
+          332
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\competition_algorithms\\warm_prior_score_model.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          337
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\competition_algorithms\\warm_prior_score_model.py",
+        "mentions": 1,
+        "lines": [
+          337
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\control\\closed_loop.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          242
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\control\\closed_loop.py",
+        "mentions": 1,
+        "lines": [
+          242
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\control\\online_swallow_control.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          247
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\control\\online_swallow_control.py",
+        "mentions": 1,
+        "lines": [
+          247
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\gui\\eeg_display.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          227,
+          312
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\gui\\eeg_display.py",
+        "mentions": 2,
+        "lines": [
+          227,
+          312
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\gui\\main_window.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          13,
+          70,
+          137,
+          222,
+          237,
+          287,
+          322,
+          342,
+          398,
+          418,
+          423,
+          428,
+          433
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\gui\\main_window.py",
+        "mentions": 13,
+        "lines": [
+          13,
+          70,
+          137,
+          222,
+          237,
+          287,
+          322,
+          342,
+          398,
+          418
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\gui\\patient_dialogs.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          217
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\gui\\patient_dialogs.py",
+        "mentions": 1,
+        "lines": [
+          217
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\processing\\assessment.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          252
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\processing\\assessment.py",
+        "mentions": 1,
+        "lines": [
+          252
+        ]
+      }
+    ],
+    [
+      "metabci\\brainflow\\processing\\decoder.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          277
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\processing\\decoder.py",
+        "mentions": 1,
+        "lines": [
+          277
+        ]
+      }
+    ],
+    [
+      "metabci\\brainstim\\paradigm_swallow.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          187,
+          192,
+          197,
+          292,
+          408,
+          413,
+          423
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainstim\\paradigm_swallow.py",
+        "mentions": 7,
+        "lines": [
+          187,
+          192,
+          197,
+          292,
+          408,
+          413,
+          423
+        ]
+      }
+    ],
+    [
+      "metabci\\brainstim\\paradigm_swallow_control.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          207,
+          302
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainstim\\paradigm_swallow_control.py",
+        "mentions": 2,
+        "lines": [
+          207,
+          302
+        ]
+      }
+    ],
+    [
+      "metabci\\brainstim\\paradigm_swallow_part2.py",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          202,
+          297
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainstim\\paradigm_swallow_part2.py",
+        "mentions": 2,
+        "lines": [
+          202,
+          297
+        ]
+      }
+    ],
+    [
+      "paradigm_swallow.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          54
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainstim\\paradigm_swallow.py",
+        "mentions": 1,
+        "lines": [
+          54
+        ]
+      }
+    ],
+    [
+      "paradigm_swallow_control.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          56
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainstim\\paradigm_swallow_control.py",
+        "mentions": 1,
+        "lines": [
+          56
+        ]
+      }
+    ],
+    [
+      "paradigm_swallow_part2.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          55
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainstim\\paradigm_swallow_part2.py",
+        "mentions": 1,
+        "lines": [
+          55
+        ]
+      }
+    ],
+    [
+      "README.md",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          34
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\README.md",
+        "mentions": 1,
+        "lines": [
+          34
+        ]
+      }
+    ],
+    [
+      "recorder.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          45
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\acquisition\\recorder.py",
+        "mentions": 1,
+        "lines": [
+          45
+        ]
+      }
+    ],
+    [
+      "requirements.txt",
+      {
+        "kind": "relative",
+        "exists": true,
+        "line_samples": [
+          70
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\requirements.txt",
+        "mentions": 1,
+        "lines": [
+          70
+        ]
+      }
+    ],
+    [
+      "sources.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          44
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\acquisition\\sources.py",
+        "mentions": 1,
+        "lines": [
+          44
+        ]
+      }
+    ],
+    [
+      "swallow_experiment.db",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          67
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\.runtime\\swallow_experiment.db",
+        "mentions": 1,
+        "lines": [
+          67
+        ]
+      }
+    ],
+    [
+      "workers.py",
+      {
+        "kind": "bare",
+        "exists": true,
+        "line_samples": [
+          42
+        ],
+        "resolved": "C:\\Users\\SLY13\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\workers.py",
+        "mentions": 1,
+        "lines": [
+          42
+        ]
+      }
+    ]
+  ]
+}

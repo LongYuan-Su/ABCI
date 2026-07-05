@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "patient_id": "011",
+  "data_root": "C:\\Users\\cwj666\\Desktop\\MetaBCI_Integrated_Initial_Version\\logs\\011",
+  "output_dir": "C:\\Users\\cwj666\\Desktop\\MetaBCI_Integrated_Initial_Version\\logs\\011\\warm_prior_quantification",
+  "created_at": "2026-07-04T16:55:12",
+  "error": "ValueError('Window [241836:244336] is outside raw length 240630')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\cwj666\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\competition_algorithms\\integration.py\", line 273, in run_warm_prior_quantification\n    warm_raw, prior_raw, rows = module.build_warm_prior_windows(cfg)\n  File \"C:\\Users\\cwj666\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\competition_algorithms\\warm_prior_regression.py\", line 234, in build_warm_prior_windows\n    warm_windows.append(extract_raw_window(raw, warm_event[\"timestamp_sec\"], cfg))\n  File \"C:\\Users\\cwj666\\Desktop\\MetaBCI_Integrated_Initial_Version\\metabci\\brainflow\\competition_algorithms\\warm_prior_regression.py\", line 196, in extract_raw_window\n    raise ValueError(f\"Window [{start}:{end}] is outside raw length {raw.shape[1]}\")\nValueError: Window [241836:244336] is outside raw length 240630\n"
+}

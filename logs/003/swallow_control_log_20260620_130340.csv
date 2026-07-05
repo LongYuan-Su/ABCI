@@ -1,0 +1,6 @@
+﻿epoch,event_index,event_name,timestamp_sec,system_time,intent_detected,confidence,detector_mode,controller_action
+1,1,E1_想象吞咽,1781931820.203448,2026-06-20 13:03:40.203,1,1.000000,cue,placeholder_triggered
+2,2,E2_想象吞咽,1781931827.277037,2026-06-20 13:03:47.277,1,1.000000,cue,placeholder_triggered
+3,3,E3_想象吞咽,1781931834.313984,2026-06-20 13:03:54.313,1,1.000000,cue,placeholder_triggered
+4,4,E4_想象吞咽,1781931841.357155,2026-06-20 13:04:01.357,1,1.000000,cue,placeholder_triggered
+5,5,E5_想象吞咽,1781931848.407109,2026-06-20 13:04:08.407,1,1.000000,cue,placeholder_triggered
